@@ -4,15 +4,17 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: $footer-bg;
-  @include tablet {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/milk_mob_right_1x.png),
       url(../images/about/milk_mob_left_1x.png);
     background-repeat: no-repeat;
     background-position: right 75%, left 75%;
+  }
+
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   @include desktop {
     background-image: url(../images/about/milk_pc_right_1x.png),
@@ -23,28 +25,8 @@
     padding-bottom: 60px;
   }
 }
-.container {
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+.about-cont {
   margin: auto;
-  @include mobile-s {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  @include mobile {
-    max-width: 480px;
-  }
-  @include tablet {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @include desktop {
-    max-width: 1280px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 }
 
 .about__lable {
