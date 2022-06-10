@@ -1,5 +1,6 @@
 .galery {
   background-color: $hero-circle-bg-color;
+ 
 
 }
 
@@ -8,6 +9,7 @@
   grid-template-columns: repeat(7, 140px);
   grid-auto-rows: 42px;
   gap: 7px;
+  margin: 0 123px;
 }
 
 .galery__grid {
@@ -95,65 +97,4 @@
   grid-row-end: 7;
 }
 
-
-// .gallery {
-//   background-color: $hero-circle-bg-color;
-//   &-list {
-//     display: grid;
-//     grid-template-columns: repeat(7, 140px);
-//     gap: 7px;
-//     grid-auto-rows: 42px;
-//   }
-//   &-img {
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//   }
-// }
-
-
-// // 
-
-// .box {
-//   &1 {
-//     grid-column: 1 / 2;
-//     grid-row: 4 / 7;
-//   }
-//   &2 {
-//     grid-column: 2 / 3;
-//     grid-row: 3 / 6;
-//   }
-//   &3 {
-//     grid-column: 3 / 5;
-//     grid-row: 1 / 7;
-//   }
-//   &4 {
-//     grid-column: 5 / 6;
-//     grid-row: 3 / 6;
-//   }
-//   &5 {
-//     grid-column: 6 / 7;
-//     grid-row: 2 / 5;
-//   }
-//   &6 {
-//     grid-column: 7 / 8;
-//     grid-row: 4 / 7;
-//   }
-//   &7 {
-//     grid-column: 2 / 3;
-//     grid-row: 6 / 9;
-//   }
-//   &10 {
-//     grid-column: 3 / 4;
-//     grid-row: 7 / 10;
-//   }
-//   &8 {
-//     grid-column: 5 / 6;
-//     grid-row: 6 / 9;
-//   }
-//   &9 {
-//     grid-column: 6 / 7;
-//     grid-row: 5 / 8;
-//   }
-// }
 
