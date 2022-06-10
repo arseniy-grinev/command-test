@@ -6,6 +6,9 @@
 //     gap: 7px;
 //     grid-auto-rows: 42px;
 //   }
+
+
+
 //   &-item {
 //     border-radius: 20px;
 //   }
@@ -60,14 +63,14 @@
 // }
 
 .galery {
-  background-color: #fff5f6;
-  padding: 0 15px;
+   background-color: $hero-circle-bg-color;
+      
 }
 
 .galery__grids {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
-
+  grid-template-columns: repeat(7, 140px);
+  grid-auto-rows: 42px;
   gap: 7px;
 }
 
