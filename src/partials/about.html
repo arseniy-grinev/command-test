@@ -41,7 +41,7 @@
           tincidunt.
         </p>
         <p class="about__recipe-end">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button type="button" class="button">
+        <button type="button" class="button__about" data-modal-open>
           Read more
           <svg height="12" width="12" class="button__row">
             <use href="./images/about/row.svg#icon-row"></use>
@@ -50,4 +50,25 @@
       </div>
     </div>
   </div>
+  <div class="about_backdrop is-hidden" data-modal>
+    <div class="about__modal">
+      <p class="about__mobile-text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+        beatae, ea nemo hic nulla deserunt corrupti quo! Minima nihil, eligendi
+        cumque, totam rem, facilis repellendus praesentium necessitatibus
+        doloremque nostrum cupiditate!
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+        beatae, ea nemo hic nulla deserunt corrupti quo! Minima nihil.
+      </p>
+
+      <button type="button" class="about__close" data-modal-close>
+        <svg width="16" height="16">
+          <use href="./images/about/about-close.svg#icon-about-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
+<script src="./js/about-modal.js"></script>
