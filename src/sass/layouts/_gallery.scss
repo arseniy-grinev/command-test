@@ -1,14 +1,9 @@
 .gallery {
-<<<<<<< Updated upstream
   background: linear-gradient(#fff5f6 50%, #FFFFFF 50%);
-=======
-  background: linear-gradient(#fff5f6 50%, #FFFFFF50%);
->>>>>>> Stashed changes
   
 }
 
 .galery__grids {
-<<<<<<< Updated upstream
    display: grid;
    grid-template-columns: repeat(7, 42px);
    grid-auto-rows: 14px;
@@ -33,27 +28,11 @@
       grid-template-columns: repeat(7, 126px);
       grid-auto-rows: 42px;
       }
-=======
-  display: grid;
-  grid-template-columns: repeat(7, 143px);
-  grid-auto-rows: 42px;
-  gap: 7px;
-
-  margin-left: auto;
-  margin-right: auto;
-
-
- 
->>>>>>> Stashed changes
 }
 
 .galery__grid {
   position: relative;
-<<<<<<< Updated upstream
   grid-gap: 1em;
-=======
- 
->>>>>>> Stashed changes
 }
 
 .galery__img {
