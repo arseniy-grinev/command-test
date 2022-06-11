@@ -1,8 +1,4 @@
-li {
-  list-style-type: none;
-}
-
-.container {
+.products__container {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
@@ -28,6 +24,7 @@ li {
 }
 
 .products-list__item {
+  list-style-type: none;
   border-radius: 24px;
   padding: 140px 40px 40px 40px;
   text-align: center;
@@ -185,8 +182,9 @@ li {
 
 .products-btn:hover,
 .products-btn:focus {
-  background-color: #d41443;
-  fill: #fff;
+  background-color: #ecebeb;
+  box-shadow: 0 1px 3px #0000001f, 0 1px 1px #00000024, 0 2px 1px #0003;
+  // fill: #fff;
 }
 
 @include tablet {
