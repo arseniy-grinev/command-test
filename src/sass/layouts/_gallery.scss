@@ -1,11 +1,8 @@
 .gallery {
-  background:linear-gradient(#FFF5F6 50%,#E5E5E5 50%);
- 
-
+  background: linear-gradient(#fff5f6 50%, #e5e5e5 50%);
 }
 
 .galery__grids {
-
   display: grid;
   grid-template-columns: repeat(7, 143px);
   grid-auto-rows: 42px;
@@ -15,7 +12,6 @@
 
 .galery__grid {
   position: relative;
-  
 }
 
 .galery__img {
@@ -99,5 +95,3 @@
   grid-row-start: 4;
   grid-row-end: 7;
 }
-
-
