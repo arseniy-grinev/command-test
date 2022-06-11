@@ -28,7 +28,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #D41443;
+    color: $btn-bg-color-dark;
 }
 
 .buy-btn {
@@ -49,6 +49,12 @@
     }
 }
 
+.menu-open-btn{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
 .chevron-right-icon {
     fill: var(--mobile-menu-accent-color);
     margin-left: 20px;
