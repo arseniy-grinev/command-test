@@ -1,5 +1,5 @@
 .contacts-section {
-   padding-bottom: 48px;
+   padding-bottom: 24px;
    background-image: linear-gradient(
      to bottom,
      $products-title-color 23%,
@@ -8,7 +8,7 @@
    );
  
    @media screen and (min-width: 768px) {
-     padding-bottom: 40px;
+     padding-bottom: 20px;
      background-image: linear-gradient(
        to bottom,
        $products-title-color 20%,
@@ -18,7 +18,7 @@
    }
  
    @media screen and (min-width: 1280px) {
-     padding-bottom: 120px;
+     padding-bottom: 60px;
      background-image: linear-gradient(
        to bottom,
        $products-title-color 13%,
