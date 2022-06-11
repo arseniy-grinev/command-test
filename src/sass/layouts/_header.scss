@@ -4,6 +4,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    & .container{
+        padding-top: 0;
+        padding-bottom: 0;
+        
+    }
 }
 
 .logo{
@@ -32,7 +38,7 @@
 }
 
 .buy-btn {
-    font-weight: 700;
+        font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     width: 209px;
@@ -59,3 +65,4 @@
     fill: var(--mobile-menu-accent-color);
     margin-left: 20px;
 }
+
