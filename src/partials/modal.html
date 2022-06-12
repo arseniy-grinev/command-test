@@ -1,0 +1,96 @@
+<!--Модальное окно Buy now-->
+<div class="backdrop is-hidden" data-buy-modal>
+    <div class="buy-modal">
+        <button type="button" class="modal-close-btn" data-buy-modal-close>
+            <svg class="input-close_btn" width="20" height="20">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <p class="modal-title">Leave your data to order</p>
+        <form>
+            <div class="modal-field">
+                <div class="modal-input-list">
+                    <label class="modal-label" for="user-name">Name</label>
+                    <div class="modal-input-wrap">
+                        <input class="modal-input" type="text" name="user-name" id="user-name">
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-input-list">
+                    <label class="modal-label" for="user-tel">Phone</label>
+                    <div class="modal-input-wrap">
+                        <input type="tel" class="modal-input" name="user-tel" id="user-tel">
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-input-list">
+                    <label class="modal-label" for="user-text">Your comment</label>
+                    <textarea name="user-text" id="user-text" placeholder="Enter the text"
+                        class="modal-text"></textarea>
+                </div>
+                <div class="product-selection">
+                    <p class="product-selection_title">Please select one of our products:</p>
+                    <div class="modal-radio-fields">
+                        <input type="radio" class="modal-radio" id="ice-cream" name="products" value="ice-cream">
+                        <label for="ice-cream" class="radio-label">ice cream</label>
+
+                        <input type="radio" class="modal-radio" id="ice-coffee" name="products" value="ice-coffee">
+                        <label for="ice-coffee" class="radio-label">ice coffee</label>
+
+                        <input type="radio" class="modal-radio" id="milkshakes" name="products" value="milkshakes">
+                        <label for="milkshakes" class="radio-label">milkshakes</label>
+                    </div>
+                </div>
+                <button class="buy-modal-btn" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--Модальное окно Franchise-->
+<div class="backdrop is-hidden" data-franchise-modal>
+    <div class="franchise-modal">
+        <button type="button" class="modal-close-btn" data-franchise-modal-close>
+            <svg class="input-close_btn" width="20" height="20">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <p class="modal-title">Want to buy a franchise?
+            Leave your details and we’ll call you back </p>
+        <form>
+            <div class="modal-field">
+                <div class="modal-input-list">
+                    <label class="modal-label" for="user-name">Name</label>
+                    <div class="modal-input-wrap">
+                        <input class="modal-input" type="text" name="user-name" id="user-name">
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-input-list">
+                    <label class="modal-label" for="user-tel">Phone</label>
+                    <div class="modal-input-wrap">
+                        <input type="tel" class="modal-input" name="user-tel" id="user-tel">
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-input-list">
+                    <label class="modal-label" for="user-email">Email</label>
+                    <div class="modal-input-wrap">
+                        <input type="email" class="modal-input" name="user-email" id="user-email">
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <button class="franchise-modal-btn" type="submit">Call me</button>
+            </div>
+        </form>
+    </div>
+</div>
