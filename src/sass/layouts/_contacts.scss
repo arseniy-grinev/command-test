@@ -57,6 +57,12 @@
      }
    }
  }
+
+.contacts__list:hover,
+.contacts__list:focus {
+  transform: scale(1.015);
+  box-shadow: 0 10px 20px rgba(159,61,86,.6);
+}
  
  .contacts__list-city {
    padding: 40px 32px;
