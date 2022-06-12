@@ -392,3 +392,18 @@
   animation-play-state: running;
   animation-name: animationHero;
 }*/
+
+.hero__icecream {
+  animation-timing-function: linear;
+  animation: lunge 2000ms 1 500ms;
+}
+
+.hero__milk {
+  animation: pulsing 2000ms infinite;
+  animation-timing-function: linear;
+}
+
+.hero__girl {
+  animation: move 1500ms 500ms;
+  animation-timing-function: linear;
+}
