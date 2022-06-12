@@ -1,421 +1,14 @@
-/*.hero {
-  //position: relative;
-  //width: 320px;
-  width: 100%;
-  //height: 502px;
-  background-color: $hero-bg-color;
-  //padding-top: 194px;
-  //padding-bottom: 158px;
-  //padding-top: 83px;
-  //padding-bottom: 158px;
-  overflow: hidden;
-
-  &__container {
-    position: relative;
-    //overflow: hidden;
-    height: 502px;
-    //animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    @include tablet {
-      height: 416px;
-    }
-
-    @include desktop {
-      height: 664px;
-    }
-  }
-
-  &__title {
-    max-width: 218px;
-    margin-bottom: 20px;
-    font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $text-color-light;
-
-    @include tablet {
-      max-width: 162px;
-      font-size: 22px;
-      line-height: 1.14;
-    }
-
-    @include desktop {
-      max-width: 277px;
-      font-size: 38px;
-      line-height: 1.16;
-      margin-bottom: 24px;
-    }
-
-    &--red {
-      font-size: 48px;
-      line-height: 0.95;
-      color: $title-color;
-
-      @include tablet {
-        font-size: 34px;
-        line-height: 0.92;
-      }
-
-      @include desktop {
-        font-size: 58px;
-        line-height: 0.9;
-      }
-    }
-  }
-
-  &__list {
-    display: flex;
-  }
-
-  &__item + .hero__item {
-    margin-left: 8px;
-
-    @include desktop {
-      margin-left: 12px;
-    }
-  }
-
-  &__btn {
-    width: 100%;
-    height: 24px;
-    text-align: center;
-    border-radius: 20px;
-    align-items: center;
-    padding: 9px 14px;
-    font-size: 8px;
-    line-height: 1.25;
-    display: flex;
-
-    transition-property: background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    @include desktop {
-      height: 40px;
-      font-size: 14px;
-      line-height: 1.29;
-      padding: 11px 23px;
-    }
-
-    &--red {
-      color: $btn-text-color-light;
-      background-color: $btn-bg-color-dark;
-
-      &:hover,
-      &:focus {
-        background-color: $btn-accent-bg-color-dark;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-          0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      }
-    }
-    &--white {
-      color: $btn-text-color-dark;
-      background-color: $btn-bg-color-light;
-
-      &:hover,
-      &:focus {
-        background-color: $btn-accent-bg-color-light;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-          0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      }
-    }
-  }
-
-  &__subtitle {
-    z-index: 2;
-    position: absolute;
-    top: 287px;
-    left: 184px;
-    color: $text-color-light;
-
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-    @include desktop {
-      top: 456px;
-      left: 229px;
-    }
-  }
-
-  &__subtitle-title {
-    font-size: 8px;
-    line-height: 1.5;
-    max-width: 114px;
-
-    @include desktop {
-      font-size: 14px;
-      line-height: 1.43;
-      max-width: 200px;
-    }
-  }
-
-  &__subtitle-link {
-    width: 18px;
-    height: 18px;
-    background-color: $btn-bg-color-light;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7px;
-    display: flex;
-    fill: $btn-bg-color-dark;
-
-    transition-property: background-color, box-shadow, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      //fill: $btn-text-color-light;
-      background-color: $btn-accent-bg-color-light;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    }
-
-    @include desktop {
-      width: 26px;
-      height: 26px;
-      margin-top: 20px;
-    }
-  }
-
-  &__read-more {
-    width: 10px;
-    height: 8px;
-    //fill: $btn-bg-color-dark;
-
-    @include desktop {
-      width: 14px;
-      height: 12px;
-    }
-  }
-
-  &__circle {
-    position: absolute;
-    //left: 36px;
-    top: 83px;
-    right: -62px;
-    //bottom: 0;
-    z-index: 1;
-    width: 346px;
-    height: 344px;
-    background-color: $hero-circle-bg-color;
-    border-radius: 50%;
-
-    @include tablet {
-      width: 335px;
-      height: 333px;
-      top: 43px;
-      right: 185px;
-    }
-
-    @include desktop {
-      width: 534px;
-      height: 534px;
-      top: 54px;
-      right: 229px;
-    }
-  }
-
-  &__icecream {
-    position: absolute;
-    right: 32px;
-    //left: 117px;
-    top: 92px;
-    //bottom: 0;
-    z-index: 2;
-    width: 171px;
-    height: 410px;
-
-    @include tablet {
-      top: 80px;
-      right: 303px;
-      width: 143px;
-      height: 336px;
-    }
-
-    @include desktop {
-      width: 236px;
-      height: 557px;
-      top: 108px;
-      right: 408px;
-    }
-  }
-
-  &__milk {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-    @include tablet {
-      position: absolute;
-      top: 246px;
-      width: 152px;
-      height: 154px;
-      //animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    @include desktop {
-      width: 213px;
-      height: 216px;
-      top: 388px;
-    }
-  }
-
-  &__girl {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-    @include tablet {
-      z-index: 4;
-      position: absolute;
-      top: 265px;
-      right: 32px;
-      width: 190px;
-      height: 150px;
-      animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    @include desktop {
-      width: 304px;
-      height: 241px;
-      top: 424px;
-      right: 16px;
-    }
-  }
-}
-
-.title__position {
-  //display: flex;
-  position: absolute;
-  top: 194px;
-  z-index: 3;
-
-  @include tablet {
-    top: 102px;
-  }
-
-  @include desktop {
-    top: 147px;
-  }
-}
-
-.hero__points {
-  display: flex;
-  position: absolute;
-  top: 92px;
-  right: 40px;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @include desktop {
-    top: 153px;
-    right: 32px;
-  }
-}
-
-.hero__points-item {
-  font-family: $title-font-family;
-  letter-spacing: 0.04em;
-  color: $text-accent-color;
-
-  position: relative;
-  //z-index: 2;
-  //animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  &::before {
-    position: absolute;
-    content: '';
-    width: 16px;
-    height: 16px;
-    top: -3px;
-    left: 46px;
-    border-radius: 50%;
-    background-color: #fff;
-    //animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    @include desktop {
-      width: 30px;
-      height: 30px;
-      left: 80px;
-    }
-  }
-
-  @include tablet {
-    font-size: 28px;
-    line-height: 1.14;
-    &:first-child {
-      padding-bottom: 13px;
-    }
-  }
-  @include desktop {
-    font-size: 46px;
-    line-height: 1.16;
-    &:first-child {
-      padding-bottom: 15px;
-    }
-  }
-  &--sub {
-    @include tablet {
-      display: flex;
-      justify-content: end;
-
-      font-family: 'DM Sans', sans-serif;
-      font-size: 8px;
-      line-height: 1.2;
-
-      color: $text-color-light;
-      @include desktop {
-        font-size: 14px;
-        line-height: 1.3;
-      }
-    }
-  }
-  &--over {
-    position: relative;
-    display: flex;
-    justify-content: end;
-  }
-}*/
-
-/*.girl-l {
-  animation: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: animationHero;
-}*/
-
 .hero {
-  //position: relative;
-  //width: 320px;
   width: 100%;
-  //height: 502px;
   background-color: $hero-bg-color;
-  //padding-top: 194px;
-  //padding-bottom: 158px;
-  //padding-top: 83px;
-  //padding-bottom: 158px;
   overflow: hidden;
 
   &__container {
     position: relative;
-    //overflow: hidden;
     min-height: 502px;
     justify-content: space-between;
     padding-top: 194px;
     display: flex;
-
-    //animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include tablet {
       min-height: 416px;
@@ -533,12 +126,8 @@
   &__article {
     z-index: 1;
     justify-content: end;
-    //display: flex;
     margin-top: 61px;
     margin-left: auto;
-    //position: absolute;
-    //top: 287px;
-    //left: 184px;
     color: $text-color-light;
 
     @media screen and (max-width: 767px) {
@@ -547,8 +136,6 @@
 
     @include desktop {
       margin-top: 108px;
-      //top: 456px;
-      //left: 229px;
     }
   }
 
@@ -581,7 +168,6 @@
 
     &:hover,
     &:focus {
-      //fill: $btn-text-color-light;
       background-color: $btn-accent-bg-color-light;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -597,7 +183,6 @@
   &__read-more {
     width: 10px;
     height: 8px;
-    //fill: $btn-bg-color-dark;
 
     @include desktop {
       width: 14px;
@@ -607,11 +192,9 @@
 
   &__circle {
     position: absolute;
-    //left: 36px;
     top: 83px;
     right: -62px;
-    //bottom: 0;
-    //z-index: 1;
+
     width: 346px;
     height: 344px;
     background-color: $hero-circle-bg-color;
@@ -635,10 +218,7 @@
   &__icecream {
     position: absolute;
     right: 32px;
-    //left: 117px;
     top: 92px;
-    //bottom: 0;
-    //z-index: 2;
     width: 171px;
     height: 410px;
 
@@ -667,7 +247,6 @@
       top: 246px;
       width: 152px;
       height: 154px;
-      //animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @include desktop {
@@ -710,29 +289,11 @@
     width: 415px;
   }
 }
-/*.title__position {
-  //display: flex;
-  position: absolute;
-  top: 194px;
-  z-index: 3;
-
-  @include tablet {
-    top: 102px;
-  }
-
-  @include desktop {
-    top: 147px;
-  }
-}*/
 
 .hero__points {
   display: flex;
   padding-top: 5px;
   padding-right: 9px;
-
-  //position: absolute;
-  //top: 92px;
-  //right: 40px;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -749,8 +310,7 @@
   color: $text-accent-color;
 
   position: relative;
-  //z-index: 2;
-  //animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &::before {
     position: absolute;
     content: '';
@@ -760,7 +320,7 @@
     left: 46px;
     border-radius: 50%;
     background-color: #fff;
-    //animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @include desktop {
       width: 30px;
       height: 30px;
@@ -804,15 +364,3 @@
     justify-content: end;
   }
 }
-
-/*.girl-l {
-  animation: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: animationHero;
-}*/
