@@ -10,9 +10,10 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    closeMenu();
     refs.modal.classList.toggle("is-hidden");
-    refs.body.classList.toggle("no-scroll");
+    if (!window.menuIsOpened) {
+      refs.body.classList.toggle("no-scroll");
+    }
   }
 })();
 
@@ -29,7 +30,9 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
-    refs.body.classList.toggle("no-scroll");
+    if (!window.menuIsOpened) {
+      refs.body.classList.toggle("no-scroll");
+    }
   }
 })();
 
@@ -43,8 +46,9 @@
   refs.openModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    closeMenu();
     refs.modal.classList.toggle("is-hidden");
-    refs.body.classList.toggle("no-scroll");
+    if (!window.menuIsOpened) {
+      refs.body.classList.toggle("no-scroll");
+    }
   }
 })();
