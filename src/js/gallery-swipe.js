@@ -98,7 +98,7 @@ function handleTouchMove(evt) {
     var yDiff = yDown - yUp;
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
+        if ( xDiff > 55 ) {
             /* left swipe */
             setPreviousIndex();
              showImageByIndex();
@@ -108,7 +108,7 @@ function handleTouchMove(evt) {
              showImageByIndex();
         }                       
     } else {
-        if ( yDiff > 0 ) {
+        if ( yDiff > 55 ) {
             /* up swipe */
             hideModal()
         } else { 
