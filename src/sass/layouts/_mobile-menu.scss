@@ -85,11 +85,19 @@
 }
 
 .mob-menu-list__item {
-    padding: 16px 20px;
-    margin: 0 -15px;
+    padding: 16px 10px;
+    margin: 0 -10px;
     border-top: 1px solid $mobile-menu-line-color;
     &:last-child {
         border-bottom: 1px solid $mobile-menu-line-color;
+    }
+    @include mobile-s {
+        margin: 0 -20px;
+        padding: 16px 20px;
+    }
+    @include tablet {
+        margin: 0 -32px;
+        padding: 16px 32px;
     }
 }
 
