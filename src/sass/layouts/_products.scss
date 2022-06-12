@@ -2,15 +2,10 @@ li {
   list-style-type: none;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 40px;
-  padding-top: 80px;
-}
-
 .products__section {
   background-color: #ffffff;
+  padding-bottom: 40px;
+  padding-top: 80px;
 }
 
 .product__paragraph {
@@ -190,7 +185,7 @@ li {
 }
 
 @include tablet {
-  .container {
+  .products__section {
     padding-top: 40px;
   }
 
@@ -240,7 +235,7 @@ li {
 }
 
 @include desktop {
-  .container {
+  .products__section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
