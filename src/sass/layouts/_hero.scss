@@ -412,21 +412,24 @@
     //overflow: hidden;
     min-height: 502px;
     justify-content: space-between;
-    padding: 193px 20px 0;
+    padding-top: 194px;
     display: flex;
 
     //animation: animationHero 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include tablet {
-      height: 416px;
+      min-height: 416px;
+      padding-top: 92px;
     }
 
     @include desktop {
-      height: 664px;
+      min-height: 664px;
+      padding-top: 147px;
     }
   }
 
   &__title {
+    z-index: 1;
     max-width: 218px;
     margin-bottom: 20px;
     font-family: 'Titan One';
@@ -441,6 +444,7 @@
       max-width: 162px;
       font-size: 22px;
       line-height: 1.14;
+      padding-top: 10px;
     }
 
     @include desktop {
@@ -468,6 +472,7 @@
   }
 
   &__list {
+    z-index: 1;
     display: flex;
   }
 
@@ -525,11 +530,15 @@
     }
   }
 
-  &__subtitle {
-    z-index: 2;
-    position: absolute;
-    top: 287px;
-    left: 184px;
+  &__article {
+    z-index: 1;
+    justify-content: end;
+    //display: flex;
+    margin-top: 61px;
+    margin-left: auto;
+    //position: absolute;
+    //top: 287px;
+    //left: 184px;
     color: $text-color-light;
 
     @media screen and (max-width: 767px) {
@@ -537,12 +546,13 @@
     }
 
     @include desktop {
-      top: 456px;
-      left: 229px;
+      margin-top: 108px;
+      //top: 456px;
+      //left: 229px;
     }
   }
 
-  &__subtitle-title {
+  &__article-title {
     font-size: 8px;
     line-height: 1.5;
     max-width: 114px;
@@ -554,7 +564,7 @@
     }
   }
 
-  &__subtitle-link {
+  &__article-link {
     width: 18px;
     height: 18px;
     background-color: $btn-bg-color-light;
@@ -601,7 +611,7 @@
     top: 83px;
     right: -62px;
     //bottom: 0;
-    z-index: 1;
+    //z-index: 1;
     width: 346px;
     height: 344px;
     background-color: $hero-circle-bg-color;
@@ -628,7 +638,7 @@
     //left: 117px;
     top: 92px;
     //bottom: 0;
-    z-index: 2;
+    //z-index: 2;
     width: 171px;
     height: 410px;
 
@@ -691,7 +701,16 @@
   }
 }
 
-.title__position {
+.products-box {
+  flex-direction: column;
+  display: inline-flex;
+  width: 260px;
+
+  @include desktop {
+    width: 415px;
+  }
+}
+/*.title__position {
   //display: flex;
   position: absolute;
   top: 194px;
@@ -704,21 +723,23 @@
   @include desktop {
     top: 147px;
   }
-}
+}*/
 
 .hero__points {
   display: flex;
-  position: absolute;
-  top: 92px;
-  right: 40px;
+  padding-top: 5px;
+  padding-right: 9px;
+
+  //position: absolute;
+  //top: 92px;
+  //right: 40px;
 
   @media screen and (max-width: 767px) {
     display: none;
   }
 
   @include desktop {
-    top: 153px;
-    right: 32px;
+    padding-right: 16px;
   }
 }
 
