@@ -1,11 +1,33 @@
 .header{
-    padding-top: 8px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    
+    z-index: 10;
+    
+}
 
+.header__container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
+    padding-top: 8px;
+
+    background-color: transparent;
+
+    @include tablet {
+        padding-top: 32px;
+    }
+
+    @include desktop {
+        padding-top: 40px;
+    }
+}
+    
 .logo{
     display: flex;
     align-items: center;
@@ -31,21 +53,62 @@
     color: $btn-bg-color-dark;
 }
 
-.buy-btn {
+.nav{
+    
+    @media screen and (max-width: 1279px){
+        display: none;
+    }
+}
+
+.nav-list{
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-list__link{
+    color: $btn-text-color-light;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.29;
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+
+    &:hover,
+    &:focus,
+    &--current{
+        color: $btn-accent-bg-color-dark;
+    }
+}
+
+.button-header {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
-    width: 209px;
+    width: 160px;
     height: 44px;
-    background: var(--mobile-menu-btn-color);
-    color: var(--mobile-menu-text-btn-color);
+    background: $btn-bg-color-light;
+    color: $btn-text-color-dark;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 22px;
-    margin: 0 auto 20px;
+    border: none;
     &:hover {
-        background: rgb(236, 235, 235);
+        background: $btn-accent-bg-color-light;
+    }
+
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+
+    @include tablet{
+        margin-left: 32px;
     }
 }
 
@@ -55,7 +118,9 @@
     margin: 0;
     padding: 0;
 }
+
 .chevron-right-icon {
     fill: var(--mobile-menu-accent-color);
-    margin-left: 20px;
+    margin-left: 12px;
 }
+
