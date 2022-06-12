@@ -54,7 +54,9 @@
 }
 
 .nav{
-    
+    transition-property: transform, visibility, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     @media screen and (max-width: 1279px){
         display: none;
     }
@@ -99,6 +101,10 @@
     justify-content: center;
     border-radius: 22px;
     border: none;
+    box-shadow: 0 1px 3px #0000001f, 0 1px 1px #00000024, 0 2px 1px #0003;
+    transition-property: background-color,box-shadow;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
     &:hover {
         background: $btn-accent-bg-color-light;
     }
