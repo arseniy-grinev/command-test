@@ -10,6 +10,24 @@
     @include desktop {
         display: none;
     }
+
+    & .menu-close-btn {
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
+
+.menu-button.is-open .menu-open-btn{
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
+
+.menu-button.is-open .menu-close-btn {
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+}
 }
 
 .menu-close-btn {
