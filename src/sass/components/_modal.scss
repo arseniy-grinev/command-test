@@ -66,7 +66,7 @@
     top: 5px;
     right: 0;
     background-color: transparent;
-    border: transparent;
+    border: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
@@ -101,6 +101,25 @@
 
     @include mobile {
         margin-top: 0;
+    }
+}
+
+.modal-franchise-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: $modal-accent-color;
+
+    @include mobile {
+        margin-top: 20px;
+    }
+
+    @include tablet {
+        margin-bottom: 30px;
     }
 }
 
@@ -268,14 +287,18 @@
     margin: 0 auto;
     color: #FFFFFF;
     background: $modal-accent-color;
-    border: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 22px;
+    border: none;
     height: 40px;
-    margin-top: 24px;
-    transition: background 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 25px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
         background: $modal-bg-btn;
+    }
+
+    @include mobile {
+        margin-top: 40px;
     }
 }

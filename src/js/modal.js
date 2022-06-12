@@ -32,3 +32,19 @@
     refs.body.classList.toggle("no-scroll");
   }
 })();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-buy-menu-modal-open]"),
+    modal: document.querySelector("[data-buy-modal]"),
+    body: document.querySelector("body"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    closeMenu();
+    refs.modal.classList.toggle("is-hidden");
+    refs.body.classList.toggle("no-scroll");
+  }
+})();
